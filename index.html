@@ -13,6 +13,31 @@
     <script src="tailwind_customize_config.js"></script>
 </head>
 <body class="font_lexend">
+    <!-- header section -->
+    <header class="sticky">
+        <nav class="bg-shade_white_color h-48 px-32 py-6">
+            <div class="navbar flex items-center">
+                <div class="navbar-start">
+                    <button class="btn text-xl text-black_color font-semibold px-8 py-3 bg-green_color hover:bg-green_color border-none rounded-lg">Blog</button>
+                </div>
+                <div class="navbar-center">
+                    <img class="pr-4" src="assets/logo.png" alt="donate logo image">
+                    <h1 class="text-xl">Donate Bangladesh</h1>
+                </div>
+                <div class="navbar-end">
+                    <img class="pr-4" src="assets/coin.png" alt="coin logo image">
+                    <p class="text-xl">100000</p>
+                </div>
+              </div>
+        </nav>
 
+        <div class="mt-20 text-center">
+            <button id="active_donation_btn" class="btn mr-5 text-xl px-8 py-3 border-none rounded-lg text-black_color font-semibold bg-green_color hover:bg-green_color">Donation</button>
+            <button id="active_history_btn" class="btn text-xl px-8 py-3 border-none rounded-lg text-dark_shade_color font-medium">History</button>
+            <div class="divider px-32 mt-8"></div>
+        </div>
+    </header>
+
+    <script src="js/button.js"></script>
 </body>
 </html>
