@@ -5,8 +5,14 @@ function checkValidations(donateAmount, availableDonateAmount) {
         const amount = parseFloat(donateAmount);
         const availableAmount = parseFloat(availableDonateAmount);
 
-        // check -> donateAmount is greater than 0 && donateAmount is less than or equal to availableDonateAmount
-        if(amount > 0 && availableDonateAmount >= amount){
+        // check -> availableAmount is zero. There is no fund to donate
+        if(availableAmount === 0){
+            alert("Donation balance is zero. Please add more funds to continue.");
+            return false;
+        }
+
+        // check -> donateAmount is greater than 0 && donateAmount is less than or equal to availableAmount
+        if(amount > 0 && availableAmount >= amount){
             return true;
         }
 
