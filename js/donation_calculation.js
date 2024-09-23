@@ -1,3 +1,4 @@
+// common shared function here
 function donationCalculator(donateAmount, availableDonateAmount, collectedDonatedAmount, inputId, collectedId){
     const donate_amount = parseFloat(donateAmount);
     const available_donate_amount = parseFloat(availableDonateAmount);
