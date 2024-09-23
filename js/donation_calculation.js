@@ -8,4 +8,7 @@ function donationCalculator(donateAmount, availableDonateAmount, collectedDonate
     document.getElementById("available_donate_amount").innerText = available_donate_amount - donate_amount;
 
     document.getElementById(inputId).value = " ";
+
+    // Show the success modal immediately after calculations
+    document.getElementById("my_modal_6").checked = true;
 }
