@@ -8,6 +8,7 @@ tailwind.config = {
           black_color: 'rgb(17, 17, 17)',
           dark_shade_color: 'rgba(17, 17, 17, 0.7)',
           light_shade_color: 'rgba(17, 17, 17, 0.4)',
+          border_color: 'rgba(17, 17, 17, 0.1)',
           shade_white_color: 'rgb(249, 247, 243)',
         }
       }

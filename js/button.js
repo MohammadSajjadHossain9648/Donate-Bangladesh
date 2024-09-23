@@ -1,20 +1,18 @@
+const donationBtn = document.getElementById("active_donation_btn");
+const historyBtn = document.getElementById("active_history_btn");
+
 document.getElementById("active_donation_btn")
 .addEventListener("click", function(){
-    const button1 = document.getElementById("active_donation_btn");
-    const button2 = document.getElementById("active_history_btn");
-
-    activeButtonStyle(button1, button2);
+    activeButtonStyle(donationBtn, historyBtn);
 });
 
 document.getElementById("active_history_btn")
 .addEventListener("click", function(){
-    const button1 = document.getElementById("active_donation_btn");
-    const button2 = document.getElementById("active_history_btn");
-
-    activeButtonStyle(button2, button1);
+    activeButtonStyle(historyBtn, donationBtn);
 });
 
 
+// Event listeners for buttons
 function activeButtonStyle(activeBtn, inactiveBtn) {
     // Set the active button styles
     activeBtn.classList.add("text-black_color", "font-semibold", "bg-green_color", "hover:bg-green_color");
@@ -23,3 +21,10 @@ function activeButtonStyle(activeBtn, inactiveBtn) {
     inactiveBtn.classList.remove("text-black_color", "font-semibold", "bg-green_color", "hover:bg-green_color");
     inactiveBtn.classList.add("text-dark_shade_color", "font-medium");
 }
+
+
+
+// Load donation content by default when the page loads
+window.addEventListener('DOMContentLoaded', () => {
+    activeButtonStyle(donationBtn, historyBtn);
+});
