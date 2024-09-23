@@ -12,51 +12,83 @@
     <!-- customize configuration with own design tokens -->
     <script src="tailwind_customize_config.js"></script>
 </head>
-<body class="font_lexend">
+<body class="font_lexend max-w-7xl">
     <!-- header section -->
     <header class="sticky top-0 backdrop-blur-5xl z-[1] ">
-        <nav class="bg-shade_white_color h-28 px-28 pb-4">
+        <nav class="bg-white_shade_color h-28 px-24 pt-2">
             <div class="navbar flex items-center">
                 <div class="navbar-start">
                     <button class="btn text-lg text-black_color font-semibold px-7 bg-green_color hover:bg-green_color border-none rounded-lg">Blog</button>
                 </div>
                 <div class="navbar-center">
                     <img class="w-9 h-8 pr-2" src="assets/logo.png" alt="donate logo image">
-                    <h1 class="text-lg text-black_color font-semibold ">Donate Bangladesh</h1>
+                    <h1 class="text-lg text-black_color font-semibold">Donate Bangladesh</h1>
                 </div>
                 <div class="navbar-end">
                     <img class="w-8 h-7 pr-2" src="assets/coin.png" alt="coin logo image">
-                    <p class="text-lg text-dark_shade_color font-medium">90000</p>
+                    <p class="text-lg text-dark_shade_color font-medium">90000 <span>BDT</span></p>
                 </div>
               </div>
         </nav>
 
-        <div class="pt-10 text-center bg-white">
+        <div class="pt-12 pb-8 text-center bg-white_color">
             <button id="active_donation_btn" class="btn mr-5 text-lg px-7 border-none rounded-lg">Donation</button>
             <button id="active_history_btn" class="btn text-lg px-7 border-none rounded-lg">History</button>
-            <div class="divider px-28 mt-8"></div>
         </div>
     </header>
 
 
     <!-- main section -->
     <main id="main_section" class="mx-28">
-        <section class="donation_section flex">
-            <img src="assets/noakhali.png" alt="Noakhali flood moment image">
-            <div class="donation_container px-6">
-                <button class="btn btn-disabled rounded-lg flex items-center">
-                    <img class="w-6 h-6" src="assets/coin.png" alt="coin logo image">
-                    <p id="donated_amount">0</p>
-                </button>
-                <h1>Donate for Flood at Noakhali, Bangladesh</h1>
-                <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <div class="form-control my-2">
-                    <label class="label">
-                      <span class="label-text font-medium text-black_color1"></span>
-                    </label>
-                    <input type="text" id="amount_number" placeholder="Write Donation Amount" class="input input-bordered font-light text-black_color1 text-xs border-none rounded-xl bg-input_bg_color [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" required />
-                  </div>
-                <button id="btn_donate_now" class="btn w-full block bg-green_color hover:bg-green_color border-none rounded-lg">Donate Now</button>
+
+        <!-- donation section -->
+        <section id="donation_section" class="flex flex-col gap-7">
+            <div class="flex items-center p-6 border border-border_color rounded-xl">
+                <img src="assets/noakhali.png" alt="Noakhali flood moment image">
+                <div class="donation_container px-6">
+                    <button class="btn btn-disabled rounded-lg flex items-center">
+                        <img class="w-5 h-5" src="assets/coin.png" alt="coin logo image">
+                        <p id="donated_amount" class="text-sm text-dark_shade_color">0 <span>BDT</span></p>
+                    </button>
+                    <h1 class="text-lg text-black_color font-bold py-3">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="text-sm text-dark_shade_color font-light">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <div class="form-control mt-7 mb-4 border border-border_color rounded-xl">
+                        <input type="text" id="donation_amount" placeholder="Write Donation Amount" class="input input-bordered focus:outline-none text-black_color text-sm bg-common_color placeholder-text-sm placeholder-text-light_shade_color placeholder-font-light [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" required />
+                      </div>
+                    <button id="btn_donate_now" class="btn w-full block bg-green_color hover:bg-green_color border-none rounded-lg text-lg text-black_color font-semibold">Donate Now</button>
+                </div>
+            </div>
+
+            <div class="flex items-center p-6 border border-border_color rounded-xl">
+                <img src="assets/feni.png" alt="Feni village flood image">
+                <div class="donation_container px-6">
+                    <button class="btn btn-disabled rounded-lg flex items-center">
+                        <img class="w-5 h-5" src="assets/coin.png" alt="coin logo image">
+                        <p id="donated_amount" class="text-sm text-dark_shade_color">0 <span>BDT</span></p>
+                    </button>
+                    <h1 class="text-lg text-black_color font-bold py-3">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="text-sm text-dark_shade_color font-light">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                    <div class="form-control mt-7 mb-4 border border-border_color rounded-xl">
+                        <input type="text" id="donation_amount" placeholder="Write Donation Amount" class="input input-bordered focus:outline-none text-black_color text-sm bg-common_color placeholder-text-sm placeholder-text-light_shade_color placeholder-font-light [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" required />
+                      </div>
+                    <button id="btn_donate_now" class="btn w-full block bg-green_color hover:bg-green_color border-none rounded-lg text-lg text-black_color font-semibold">Donate Now</button>
+                </div>
+            </div>
+
+            <div class="flex items-center p-6 border border-border_color rounded-xl">
+                <img src="assets/quota-protest.png" alt="Quota protest moment image">
+                <div class="donation_container px-6">
+                    <button class="btn btn-disabled rounded-lg flex items-center">
+                        <img class="w-5 h-5" src="assets/coin.png" alt="coin logo image">
+                        <p id="donated_amount" class="text-sm text-dark_shade_color">0 <span>BDT</span></p>
+                    </button>
+                    <h1 class="text-lg text-black_color font-bold py-3">Aid for Injured in the Quota Movement</h1>
+                    <p class="text-sm text-dark_shade_color font-light">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                    <div class="form-control mt-7 mb-4 border border-border_color rounded-xl">
+                        <input type="text" id="donation_amount" placeholder="Write Donation Amount" class="input input-bordered focus:outline-none text-black_color text-sm bg-common_color placeholder-text-sm placeholder-text-light_shade_color placeholder-font-light [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" required />
+                      </div>
+                    <button id="btn_donate_now" class="btn w-full block bg-green_color hover:bg-green_color border-none rounded-lg text-lg text-black_color font-semibold">Donate Now</button>
+                </div>
             </div>
         </section>
     </main>
