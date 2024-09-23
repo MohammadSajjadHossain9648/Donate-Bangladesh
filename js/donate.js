@@ -4,7 +4,13 @@ document.getElementById("btn1_donate_now").addEventListener("click", function(){
 
     // validation check
     if(!checkValidations(donateAmount, availableDonateAmount)){
-        alert("Please enter a valid donation amount");
+        document.getElementById("input_donation_amount1").value = " ";
         return;
     }
+
+    // calculation for donation amount
+    const donate_amount = parseFloat(donateAmount);
+    const available_donate_amount = parseFloat(availableDonateAmount);
+
+
 });

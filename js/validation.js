@@ -9,7 +9,11 @@ function checkValidations(donateAmount, availableDonateAmount) {
         if(amount > 0 && availableDonateAmount >= amount){
             return true;
         }
+
+        alert("Kindly adjust your donation amount which is higher than available donate balance");
+        return false
     }
 
+    alert("Please enter a valid donation amount");
     return false;
 }
