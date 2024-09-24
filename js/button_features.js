@@ -16,4 +16,7 @@ function showSectionById(activeBtn){
 
     // show the section which button is clicked
     document.getElementById(activeBtn).classList.remove("hidden");
+    
+    console.log(document.getElementById("donation_section").classList);
+    console.log(document.getElementById("history_section").classList);
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh Blog</title>
+    <!-- Font CSS file -->
+    <link rel="stylesheet" href="styles/font.css">
+    <!-- daisyUI 4.12.10 CSS file + Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customize configuration with own design tokens -->
+    <script src="tailwind_customize_config.js"></script>
+</head>
+<body class="font_lexend max-w-7xl">
+    <!-- header section -->
+    <header class="sticky top-0 backdrop-blur-5xl z-[1] ">
+        <nav class="bg-white_shade_color h-28 px-24 pt-2">
+            <div class="navbar flex items-center">
+                <div class="navbar-start">
+                    <a href="index.html">
+                        <button class="btn text-lg text-black_color font-semibold px-7 bg-green_color hover:bg-green_color border-none rounded-lg">Home</button>
+                    </a>
+                </div>
+                <div class="navbar-center">
+                    <img class="w-9 h-8 pr-2" src="assets/logo.png" alt="donate logo image">
+                    <h1 class="text-lg text-black_color font-semibold">Donate Bangladesh</h1>
+                </div>
+                <div class="navbar-end">
+                    <img class="w-8 h-7 pr-2" src="assets/coin.png" alt="coin logo image">
+                    <p class="text-lg text-dark_shade_color font-medium"><span id="available_donate_amount">90000</span> BDT</p>
+                </div>
+              </div>
+        </nav>
+    </header>
+</body>
+</html>
