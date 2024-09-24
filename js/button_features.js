@@ -9,14 +9,16 @@ function activeButtonStyle(activeBtn, inactiveBtn) {
 }
 
 //show the clicked button section
-function showSectionById(activeBtn){
+function showSectionById(buttonId){
     // hide all the sections
     document.getElementById("donation_section").classList.add("hidden");
     document.getElementById("history_section").classList.add("hidden");
 
     // show the section which button is clicked
-    document.getElementById(activeBtn).classList.remove("hidden");
-    
-    console.log(document.getElementById("donation_section").classList);
-    console.log(document.getElementById("history_section").classList);
+    if(buttonId === 1){
+        document.getElementById("donation_section").classList.remove("hidden");
+    }
+    else{
+        document.getElementById("history_section").classList.remove("hidden");
+    }
 }
