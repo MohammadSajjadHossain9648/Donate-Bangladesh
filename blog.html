@@ -15,23 +15,139 @@
 <body class="font_lexend max-w-7xl">
     <!-- header section -->
     <header class="sticky top-0 backdrop-blur-5xl z-[1] ">
-        <nav class="bg-white_shade_color h-28 px-24 pt-2">
-            <div class="navbar flex items-center">
+        <nav class="bg-white_shade_color lg:h-24 sm:h-20 lg:px-24 sm:px-8 pt-2">
+            <div class="navbar flex lg:items-center">
                 <div class="navbar-start">
                     <a href="index.html">
-                        <button class="btn text-lg text-black_color font-semibold px-7 bg-green_color hover:bg-green_color border-none rounded-lg">Home</button>
+                        <button class="btn lg:text-lg sm:text-sm text-black_color font-semibold lg:px-7 sm:px-4 bg-green_color hover:bg-green_color border-none rounded-lg">Home</button>
                     </a>
                 </div>
                 <div class="navbar-center">
                     <img class="w-9 h-8 pr-2" src="assets/logo.png" alt="donate logo image">
-                    <h1 class="text-lg text-black_color font-semibold">Donate Bangladesh</h1>
+                    <h1 class="lg:text-lg sm:text-sm text-black_color font-semibold">Donate Bangladesh</h1>
                 </div>
                 <div class="navbar-end">
                     <img class="w-8 h-7 pr-2" src="assets/coin.png" alt="coin logo image">
-                    <p class="text-lg text-dark_shade_color font-medium"><span id="available_donate_amount">90000</span> BDT</p>
+                    <p class="lg:text-lg sm:text-sm text-dark_shade_color font-medium"><span id="available_donate_amount">90000</span> BDT</p>
                 </div>
               </div>
         </nav>
     </header>
+
+
+    <!-- blog section -->
+     <main class="lg:mx-28 sm:mx-14 mt-8">
+
+        <!-- faq section -->
+        <section>
+            <!-- faq header -->
+            <div class="mb-10">
+                <h1 class="text-2xl text-black_color text-center font-bold mb-5">Frequently Asked Questions</h1>
+                <h2 class="text-lg text-dark_shade_color text-center font-bold mb-5">Find answers to your most frequently asked questions.</h2>
+            </div>
+
+            <!-- faq body -->
+            <!-- Accordion Item 1 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center py-5 text-black_color">
+                    <span>What is the Document Object Model (DOM)?</span>
+                    <span id="icon-1" class="text-black_color transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                        <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </button>
+                <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pb-5 text-sm text-dark_shade_color">
+                        When a web page is loaded, the browser creates a Document Object Model(DOM) of the page. The Document Object Model(DOM) is a programming interface for web documents. It is responsible for managing the structure and behavior of web pages. It allows script to update, access and interact with the HTML or XML content dynamically.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(2)" class="w-full flex justify-between items-center py-5 text-black_color">
+                    <span>How do you select an element from the DOM?</span>
+                    <span id="icon-2" class="text-black_color transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                        <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </button>
+                <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pb-5 text-sm text-dark_shade_color">
+                        We can select an element from the DOM by using getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector() and querySelectorAll().
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(3)" class="w-full flex justify-between items-center py-5 text-black_color">
+                    <span>What is event delegation in the context of the DOM, and why is it useful?</span>
+                    <span id="icon-3" class="text-black_color transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                        <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </button>
+                <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pb-5 text-sm text-dark_shade_color">
+                        Event delegation is a javascript design pattern used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common parent element.
+                        Event delegation is useful because it improves both performance and flexibility when handling events in the DOM.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(4)" class="w-full flex justify-between items-center py-5 text-black_color">
+                    <span>How do you manipulate an element's attributes and styles using the DOM?</span>
+                    <span id="icon-4" class="text-black_color transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                        <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </button>
+                <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="pb-5 text-sm text-dark_shade_color">
+                    We can manipulate an element's attributes by using setAttribute(), getAttribute() and removeAttribute() and styles like element.classList.add() or element.classList.remove() or element.style.color using the DOM.
+                </p>
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+            function toggleAccordion(index) {
+                const content = document.getElementById(`content-${index}`);
+                const icon = document.getElementById(`icon-${index}`);
+
+                // SVG for Down icon
+                const downSVG = `
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                    </svg>
+                `;
+
+                // SVG for Up icon
+                const upSVG = `
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path fill-rule="evenodd" d="M11.78 9.78a.75.75 0 0 1-1.06 0L8 7.06 5.28 9.78a.75.75 0 0 1-1.06-1.06l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+                    </svg>
+                `;
+
+                // Toggle the content's max-height for smooth opening and closing
+                if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                    content.style.maxHeight = '0';
+                    icon.innerHTML = upSVG;
+                }
+                else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.innerHTML = downSVG;
+                }
+            }
+        </script>
+     </main>
 </body>
 </html>
