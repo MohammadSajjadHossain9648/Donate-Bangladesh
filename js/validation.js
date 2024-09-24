@@ -10,6 +10,11 @@ function checkValidations(donateAmount, availableDonateAmount) {
             alert("Donation balance is zero. Please add more funds to continue.");
             return false;
         }
+        // check -> donateAmount can not be equal to or less than zero.
+        else if(amount <= 0){
+            alert("Donation amount can not be zero or negative number.");
+            return false
+        }
 
         // check -> donateAmount is greater than 0 && donateAmount is less than or equal to availableAmount
         if(amount > 0 && availableAmount >= amount){
