@@ -8,12 +8,12 @@ function createTransactions(id, time, donateAmount, collectedId){
                 <img class="w-full h-full rounded-xl" src="assets/noakhali.png" alt="Noakhali flood moment image">
             </div>
             <div class="w-full">
-                <div class="flex sm:flex-col lg:justify-between lg:items-center">
+                <div class="flex sm:flex-col lg:flex-row lg:justify-between lg:items-center">
                     <h1 class="text-black_color font-bold">Donated for Flood at Noakhali, Bangladesh</h1>
                     <p class="text-sm text-dark_shade_color font-light">Date: <span>${time}</span></p>
                 </div>
                 <h3 class="text-sm text-dark_shade_color">Recipient: <span>${generatePhoneNumber()}</span></h3>
-                <div class="flex sm:flex-col lg:justify-between lg:items-center">
+                <div class="flex sm:flex-col lg:flex-row lg:justify-between lg:items-center">
                     <h3 class="text-sm text-dark_shade_color">Trans Id: <span>${generateTransactionID()}</span></h3>
                     <p class="text-2xl text-lime-500 font-bold">BDT <span>${donateAmount}</span></p>
                 </div>
@@ -26,12 +26,12 @@ function createTransactions(id, time, donateAmount, collectedId){
                 <img class="w-full h-full rounded-xl" src="assets/feni.png" alt="Feni village flood image">
             </div>
             <div class="w-full">
-                <div class="flex sm:flex-col lg:justify-between lg:items-center">
+                <div class="flex sm:flex-col lg:flex-row lg:justify-between lg:items-center">
                     <h1 class="text-black_color font-bold">Donated for Flood Relief in Feni, Bangladesh</h1>
                     <p class="text-sm text-dark_shade_color font-light">Date: <span>${time}</span></p>
                 </div>
                 <h3 class="text-sm text-dark_shade_color">Recipient: <span>${generatePhoneNumber()}</span></h3>
-                <div class="flex sm:flex-col lg:justify-between lg:items-center">
+                <div class="flex sm:flex-col lg:flex-row lg:justify-between lg:items-center">
                     <h3 class="text-sm text-dark_shade_color">Trans Id: <span>${generateTransactionID()}</span></h3>
                     <p class="text-2xl text-lime-500 font-bold">BDT <span>${donateAmount}</span></p>
                 </div>
@@ -44,12 +44,12 @@ function createTransactions(id, time, donateAmount, collectedId){
                 <img class="w-full h-full rounded-xl" src="assets/quota-protest.png" alt="Quota protest moment image">
             </div>
             <div class="w-full">
-                <div class="flex sm:flex-col lg:justify-between lg:items-center">
+                <div class="flex sm:flex-col lg:flex-row lg:justify-between lg:items-center">
                     <h1 class="text-black_color font-bold">Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
                     <p class="text-sm text-dark_shade_color font-light">Date: <span>${time}</span></p>
                 </div>
                 <h3 class="text-sm text-dark_shade_color">Recipient: <span>${generatePhoneNumber()}</span></h3>
-                <div class="flex sm:flex-col lg:justify-between lg:items-center">
+                <div class="flex sm:flex-col lg:flex-row lg:justify-between lg:items-center">
                     <h3 class="text-sm text-dark_shade_color">Trans Id: <span>${generateTransactionID()}</span></h3>
                     <p class="text-2xl text-lime-500 font-bold">BDT <span>${donateAmount}</span></p>
                 </div>

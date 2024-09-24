@@ -1,5 +1,13 @@
 // common shared function here
 function checkValidations(donateAmount, availableDonateAmount) {
+    // check -> Is donation amount field empty or not
+    // console.log(donateAmount.value);
+
+    if(donateAmount == "") {
+        alert("Donation amount field is empty. Please enter donation amount.");
+        return false;
+    }
+
     // check -> donateAmount is a number or not
     if(!isNaN(donateAmount)){
         const amount = parseFloat(donateAmount);
