@@ -12,42 +12,42 @@
     <!-- customize configuration with own design tokens -->
     <script src="tailwind_customize_config.js"></script>
 </head>
-<body class="font_lexend max-w-7xl">
+<body class="font_lexend lg:max-w-screen-xl sm:max-w-screen-sm">
     <!-- header section -->
     <header class="sticky top-0 backdrop-blur-5xl z-[1]">
-        <nav class="bg-white_shade_color h-28 sm:h-20 px-24 sm:px-8 pt-2">
-            <div class="navbar flex items-center">
+        <nav class="bg-white_shade_color lg:h-28 sm:h-20 lg:px-24 sm:px-8 pt-2">
+            <div class="navbar flex lg:items-center">
                 <div class="navbar-start">
                     <a href="blog.html">
-                        <button class="btn text-lg sm:text-sm text-black_color font-semibold px-7 sm:px-4 bg-green_color hover:bg-green_color border-none rounded-lg">Blog</button>
+                        <button class="btn lg:text-lg sm:text-sm text-black_color font-semibold lg:px-7 sm:px-4 bg-green_color hover:bg-green_color border-none rounded-lg">Blog</button>
                     </a>
                 </div>
                 <div class="navbar-center">
                     <img class="w-9 h-8 pr-2" src="assets/logo.png" alt="donate logo image">
-                    <h1 class="text-lg sm:text-sm text-black_color font-semibold">Donate Bangladesh</h1>
+                    <h1 class="lg:text-lg sm:text-sm text-black_color font-semibold">Donate Bangladesh</h1>
                 </div>
                 <div class="navbar-end">
                     <img class="w-8 h-7 pr-2" src="assets/coin.png" alt="coin logo image">
-                    <p class="text-lg sm:text-sm text-dark_shade_color font-medium"><span id="available_donate_amount">90000</span> BDT</p>
+                    <p class="lg:text-lg sm:text-sm text-dark_shade_color font-medium"><span id="available_donate_amount">90000</span> BDT</p>
                 </div>
               </div>
         </nav>
 
-        <div class="pt-12 sm:pt-6 pb-8 sm:pb-4 text-center bg-white_color">
-            <button id="active_donation_btn" class="btn mr-5 text-lg sm:text-sm px-7 sm:px-4 border-none rounded-lg">Donation</button>
-            <button id="active_history_btn" class="btn text-lg sm:text-sm px-7 sm:px-4 border-none rounded-lg">History</button>
+        <div class="lg:pt-12 sm:pt-6 lg:pb-8 sm:pb-4 text-center bg-white_color">
+            <button id="active_donation_btn" class="btn mr-5 lg:text-lg sm:text-sm px-7 sm:px-4 border-none rounded-lg">Donation</button>
+            <button id="active_history_btn" class="btn lg:text-lg sm:text-sm px-7 sm:px-4 border-none rounded-lg">History</button>
         </div>
     </header>
 
 
     <!-- main section -->
-    <main id="main_section" class="mx-28">
+    <main id="main_section" class="lg:mx-28 sm:mx-14">
 
         <!-- donation section -->
         <section id="donation_section" class="flex flex-col gap-7">
-            <div class="flex items-center p-6 border border-border_color rounded-xl">
+            <div class="flex sm:flex-col lg:items-center p-6 border border-border_color rounded-xl">
                 <img src="assets/noakhali.png" alt="Noakhali flood moment image">
-                <div class="donation_container px-6">
+                <div class="donation_container lg:px-6 sm:pt-6">
                     <button class="btn btn-disabled rounded-lg">
                         <img class="w-5 h-5" src="assets/coin.png" alt="coin logo image">
                         <p id="collected_donate_amount1" class="text-sm text-dark_shade_color">0</p>
@@ -62,9 +62,9 @@
                 </div>
             </div>
 
-            <div class="flex items-center p-6 border border-border_color rounded-xl">
+            <div class="flex sm:flex-col lg:items-center p-6 border border-border_color rounded-xl">
                 <img src="assets/feni.png" alt="Feni village flood image">
-                <div class="donation_container px-6">
+                <div class="donation_container lg:px-6 sm:pt-6">
                     <button class="btn btn-disabled rounded-lg">
                         <img class="w-5 h-5" src="assets/coin.png" alt="coin logo image">
                         <p id="collected_donate_amount2" class="text-sm text-dark_shade_color">0</p>
@@ -79,9 +79,9 @@
                 </div>
             </div>
 
-            <div class="flex items-center p-6 border border-border_color rounded-xl">
+            <div class="flex sm:flex-col lg:items-center p-6 border border-border_color rounded-xl">
                 <img src="assets/quota-protest.png" alt="Quota protest moment image">
-                <div class="donation_container px-6">
+                <div class="donation_container lg:px-6 sm:pt-6">
                     <button class="btn btn-disabled rounded-lg">
                         <img class="w-5 h-5" src="assets/coin.png" alt="coin logo image">
                         <p id="collected_donate_amount3" class="text-sm text-dark_shade_color">0</p>
