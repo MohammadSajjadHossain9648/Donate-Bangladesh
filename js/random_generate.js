@@ -1,3 +1,46 @@
+//take update time
+function getCurrentFormattedDate() {
+    // Create a new Date object for the current date and time
+    const currentDate = new Date();
+
+    // Define the options for formatting
+    const options = {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    };
+
+    // Get the weekday, month, day, year, hour, minute, second
+    const weekday = currentDate.toLocaleString('en-US', { weekday: 'short' });
+    const month = currentDate.toLocaleString('en-US', { month: 'short' });
+    const day = currentDate.getDate();
+    const year = currentDate.getFullYear();
+    const hour = String(currentDate.getHours()).padStart(2, '0');
+    const minute = String(currentDate.getMinutes()).padStart(2, '0');
+    const second = String(currentDate.getSeconds()).padStart(2, '0');
+
+    // Get the timezone offset
+    const timezoneOffset = currentDate.getTimezoneOffset();
+    const offsetHours = String(Math.abs(Math.floor(timezoneOffset / 60))).padStart(2, '0');
+    const offsetMinutes = String(Math.abs(timezoneOffset % 60)).padStart(2, '0');
+    const offsetSign = timezoneOffset <= 0 ? '+' : '-';
+    const formattedOffset = `GMT ${offsetSign}${offsetHours}${offsetMinutes}`;
+
+    // Use the explicit timezone name
+    const timezoneName = "Bangladesh Standard Time";  //get real timezone -> const timezoneName = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    // Combine all parts to form the final output without a comma
+    return `${weekday} ${month} ${day} ${year} ${hour}:${minute}:${second} ${formattedOffset} (${timezoneName})`;
+}
+
+
+
+
 // create new phone number
 function generatePhoneNumber() {
     // Fixed part: First two digits are "01"

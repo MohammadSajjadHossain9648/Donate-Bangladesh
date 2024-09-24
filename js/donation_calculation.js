@@ -1,5 +1,5 @@
 // common shared function here
-function donationCalculator(id, donateAmount, availableDonateAmount, collectedDonatedAmount, inputId, collectedId){
+function donationCalculator(id, time, donateAmount, availableDonateAmount, collectedDonatedAmount, inputId, collectedId){
     const donate_amount = parseFloat(donateAmount);
     const available_donate_amount = parseFloat(availableDonateAmount);
     const collected_donated_amount = parseFloat(collectedDonatedAmount);
@@ -13,5 +13,5 @@ function donationCalculator(id, donateAmount, availableDonateAmount, collectedDo
     document.getElementById("my_modal_6").checked = true;
 
     //make a transactions history
-    createTransactions(id, donateAmount, collectedId);
+    createTransactions(id, time, donateAmount, collectedId);
 }

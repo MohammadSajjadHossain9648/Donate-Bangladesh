@@ -97,7 +97,7 @@
 
         <!-- Success Modal -->
         <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-        <div class="modal" role="dialog">
+        <div class="modal hidden" role="dialog">
             <div class="modal-box w-3/5 h-1/2 flex flex-col items-center">
                 <h1 class="text-5xl text-black_color font-extrabold my-3">Congrates!</h1>
                 <img class="w-12 h-12 mb-8" src="assets/coin.png" alt="coin logo image">
@@ -114,12 +114,12 @@
         <section id="history_section" class="flex flex-col gap-4">
             <div class="p-4 flex gap-6 border border-border_color rounded-xl">
                 <div class="w-30 h-20" id="transaction_image">
-                    <img class="w-full h-full" src="" alt="">
+
                 </div>
                 <div class="w-full">
                     <div class="flex justify-between items-center">
                         <h1 id="transaction_title" class="text-lg text-black_color font-bold"></h1>
-                        <p id="transaction_time" class="text-sm text-dark_shade_color font-light"></p>
+                        <p class="text-sm text-dark_shade_color font-light">Date: <span id="transaction_time"></span></p>
                     </div>
                     <h3 class="text-sm text-dark_shade_color">Recipient: <span id="transaction_recipient"></span></h3>
                     <div class="flex justify-between items-center">
