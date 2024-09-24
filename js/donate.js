@@ -4,6 +4,7 @@ document.getElementById("btn1_donate_now").addEventListener("click", function(){
     const collectedDonatedAmount = document.getElementById("collected_donate_amount1").innerText;
     const inputId = "input_donation_amount1";
     const collectedId = "collected_donate_amount1";
+    const id = 1;
 
     // validation check
     if(!checkValidations(donateAmount, availableDonateAmount)){
@@ -12,7 +13,7 @@ document.getElementById("btn1_donate_now").addEventListener("click", function(){
     }
 
     // calculation for donation amount
-    donationCalculator(donateAmount, availableDonateAmount, collectedDonatedAmount, inputId, collectedId);
+    donationCalculator(id, donateAmount, availableDonateAmount, collectedDonatedAmount, inputId, collectedId);
 });
 
 
@@ -22,6 +23,7 @@ document.getElementById("btn2_donate_now").addEventListener("click", function(){
     const collectedDonatedAmount = document.getElementById("collected_donate_amount2").innerText;
     const inputId = "input_donation_amount2";
     const collectedId = "collected_donate_amount2";
+    const id = 2;
 
     // validation check
     if(!checkValidations(donateAmount, availableDonateAmount)){
@@ -30,7 +32,7 @@ document.getElementById("btn2_donate_now").addEventListener("click", function(){
     }
 
     // calculation for donation amount
-    donationCalculator(donateAmount, availableDonateAmount, collectedDonatedAmount, inputId, collectedId);
+    donationCalculator(id, donateAmount, availableDonateAmount, collectedDonatedAmount, inputId, collectedId);
 });
 
 
@@ -40,6 +42,7 @@ document.getElementById("btn3_donate_now").addEventListener("click", function(){
     const collectedDonatedAmount = document.getElementById("collected_donate_amount3").innerText;
     const inputId = "input_donation_amount3";
     const collectedId = "collected_donate_amount3";
+    const id = 3;
 
     // validation check
     if(!checkValidations(donateAmount, availableDonateAmount)){
@@ -48,5 +51,5 @@ document.getElementById("btn3_donate_now").addEventListener("click", function(){
     }
 
     // calculation for donation amount
-    donationCalculator(donateAmount, availableDonateAmount, collectedDonatedAmount, inputId, collectedId);
+    donationCalculator(id, donateAmount, availableDonateAmount, collectedDonatedAmount, inputId, collectedId);
 });

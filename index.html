@@ -108,6 +108,28 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- history section -->
+        <section id="history_section" class="flex flex-col gap-4">
+            <div class="p-4 flex gap-6 border border-border_color rounded-xl">
+                <div class="w-30 h-20" id="transaction_image">
+                    <img class="w-full h-full" src="" alt="">
+                </div>
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <h1 id="transaction_title" class="text-lg text-black_color font-bold"></h1>
+                        <p id="transaction_time" class="text-sm text-dark_shade_color font-light"></p>
+                    </div>
+                    <h3 class="text-sm text-dark_shade_color">Recipient: <span id="transaction_recipient"></span></h3>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-sm text-dark_shade_color">Trans Id: <span id="transaction_id"></span></h3>
+                        <p class="text-2xl text-lime-500 font-bold">BDT <span id="transaction_amount"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- connect js file -->
@@ -115,5 +137,6 @@
     <script src="js/donate.js"></script>
     <script src="js/validation.js"></script>
     <script src="js/donation_calculation.js"></script>
+    <script src="js/transactions_history.js"></script>
 </body>
 </html>
